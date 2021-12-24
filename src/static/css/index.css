@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #699f63;
+}
+
+nav > .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+nav a {
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans;
+}
+
+nav a:link,
+nav a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+  background-color: #013712;
+}
+
+.form-group {
+  padding: 0.5rem 0;
+  margin-top: 3rem;
+}
+
+.form-group label {
+  display: inline-block;
+  min-width: 0.75rem;
+  vertical-align: middle;
+  font-family: "Roboto", sans;
+  padding: 0 1rem;
+}
+
+.form-action {
+  padding: 1.2rem 0 1.2rem 0;
+}
+
+input[type="text"] {
+  padding: 0.5rem 0.6rem;
+  border: thin solid #e6e546;
+  font-family: "Roboto", sans;
+}
+
+button {
+  background-color: #699f63;
+  border: thin solid #393939;
+  color: white;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  font-family: "Roboto", sans;
+}
+
+button:active {
+  background-color: #396f33;
+}
+
+#chat-app {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.chat-users h2 {
+  margin: 0;
+}
+.chat-users ul {
+  margin: 0;
+  list-style-type: square;
+}
+.chat-users ul li {
+  width: fit-content;
+  padding: 0.25rem;
+}
+
+.chatbox-area {
+  flex: 2;
+  margin: 1rem;
+}
+
+.chat-message {
+  /* margin-bottom: 4.5rem; */
+  margin-right: 1rem;
+  max-height: calc(100vh - 220px);
+  overflow: auto;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.msg-date {
+  background-color: #e5e5e5;
+  color: #888;
+  border-radius: 0.1rem;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0 0.25rem;
+  padding: 0.05rem 0.25rem;
+}
+
+.msg-user {
+  font-weight: bold;
+  margin: 0 0.25rem;
+}
+
+.chatbox-form {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 60rem;
+  padding: 1rem 0;
+}
+
+.chatbox-form input[type="text"] {
+  display: block;
+  font-size: 1.4em;
+  width: 100%;
+}

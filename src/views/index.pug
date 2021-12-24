@@ -1,0 +1,15 @@
+extends layout.pug
+
+
+block variables
+    - const pageTitle = 'Acueil';
+
+block content
+    h1 Bienvenue sur la page d'acuueil
+
+    form(action="/chat", method="get")
+        .form-group
+            label(for="pseudo") Pseudonyme
+            input(type="text" name="pseudo" placeholder="Votre speudo...")
+        .form-action
+            button(type="submit") Se connecter

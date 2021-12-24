@@ -1,0 +1,19 @@
+{
+  "name": "node-chat",
+  "version": "1.0.0",
+  "description": "Chat en temps réel avec Node JS",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "helmet": "^4.6.0",
+    "pug": "^3.0.2",
+    "seed-color": "^2.0.1",
+    "socket.io": "^4.4.0",
+    "xss": "^1.0.10"
+  }
+}
