@@ -1,7 +1,7 @@
 const express = require("express");
 const helmet = require("helmet");
 const http = require("http");
-const port = 1337;
+const port = process.env.PORT || 1337;
 const app = express();
 const server = http.createServer(app);
 const io = require("socket.io")(server);
